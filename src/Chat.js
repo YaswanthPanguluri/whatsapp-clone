@@ -18,6 +18,7 @@ function Chat() {
   const sendMessage = (e) => {
     e.preventDefault();
     console.log('You typed >>> ',input);
+    setInput("");
   };
   return (
     <div className="chat">
@@ -44,8 +45,8 @@ function Chat() {
           <span className="chat__name"> yaswanth panguluri </span>
           Hey Yaswanth
           <span className="chat__timestamp">3.52pm</span>
-          
         </p>
+
       </div>
       <div className="chat__footer">
         <InsertEmoticon />
