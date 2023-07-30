@@ -1,6 +1,5 @@
 import React from "react";
 import "./Sidebar.css";
-import SettingsIcon from "@mui/icons-material/Settings";
 import { Avatar } from "@mui/material";
 import { DonutLarge } from "@mui/icons-material";
 import { Chat } from "@mui/icons-material";

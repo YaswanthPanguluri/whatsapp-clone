@@ -34,12 +34,12 @@ function Chat() {
         </div>
       </div>
       <div className="chat__body">
-        <p className="chat__message">
+        <p className={`chat__message ${true && 'chat_reciever'}`}>
           <span className="chat__name"> yaswanth panguluri </span>
           Hey Yaswanth
+        
+        <span className="chat__timestamp">3.52pm</span>
         </p>
-
-        <p className="chat__message">Hey Panguluri</p>
       </div>
       <div className="chat__footer"></div>
     </div>
