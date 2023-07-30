@@ -1,6 +1,6 @@
 import React from "react";
 import "./Chat.css";
-import { Avatar,IconButton } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
 import { SearchOutlined } from "@mui/icons-material";
 import { AttachFile } from "@mui/icons-material";
 import { MoreVert } from "@mui/icons-material";
@@ -18,13 +18,11 @@ function Chat() {
       <div className="chat__header">
         <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
         <div className="chat__headerInfo">
-        <h3>Room Name</h3>
-        <p>Last seen at ...</p>
-
+          <h3>Room Name</h3>
+          <p>Last seen at ...</p>
         </div>
         <div className="chat__headerRight">
-
-        <IconButton>
+          <IconButton>
             <SearchOutlined />
           </IconButton>
           <IconButton>
@@ -33,9 +31,16 @@ function Chat() {
           <IconButton>
             <MoreVert />
           </IconButton>
+        </div>
       </div>
+      <div className="chat__body">
+        <p className="chat__message">
+          <span className="chat__name"> yaswanth panguluri </span>
+          Hey Yaswanth
+        </p>
+
+        <p className="chat__message">Hey Panguluri</p>
       </div>
-      <div className="chat__body"></div>
       <div className="chat__footer"></div>
     </div>
   );
